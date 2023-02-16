@@ -92,7 +92,7 @@ Markdown quotes are beautifully styled:
 
 ## Details {#details}
 
-Markdown can embed HTML elements, and [`details`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) HTML elements are beautifully styled:
+Markdown can embed HTML elements, and [`details`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details) HTML elements are automatically beautifully styled.
 
 ```md
 ### Details element example
@@ -137,6 +137,17 @@ Markdown can embed HTML elements, and [`details`](https://developer.mozilla.org/
 
 </BrowserWindow>
 ```
+
+Alternatively, if you don't like this long-ish HTML syntax for your `details` elements, you can also use the ready-made React component from the `@docusaurus/theme-common` package, which is always available, when you're using an official Docusaurus theme.
+
+```md
+### Details element React component example
+
+<Details summary="Toggle me!">
+  This is the detailed content
+</Details>
+```
+
 
 :::note
 
